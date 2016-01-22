@@ -19,12 +19,15 @@
 
       <h2>Overview</h2>
         <p>
-          In this assignment, you will be learning how to run a python program and how to get started using the language.
+          In this lab, you will learn how to run a python program and get started using the language.
+          We'll write some fun programs and trade trivia about
+          our mutual favorite furniture manufacturer, IKEA.
         </p>
 
         <h3>Prerequisites</h3>
         <p>
-          Absolutely NONE!! This lab is intended for all levels of experience. The class this year
+          Absolutely NONE!! Just like the number of customers that leave
+          IKEA unsatisfied. This lab is intended for all levels of experience. The class this year
           has veteran Computer Scientists as well as people who have never taken a class in the 
           department before. If some parts seem basic, stick with us. If some parts seem 
           complicated, ask a TA for help! The point is that after this lab, you should feel 
@@ -37,10 +40,13 @@
         <p>
           There are lots of programming languages out there, so why is this 
           class in Python? The top two most popular programming languages in Data
-          Science are Python and R [see below]. Although R is a little more 
-          popular for data science specifically, Python is easier to learn and
+          Science are Python and R [see below]. We definitely wanted to use one
+          of them since they both have great libraries for doing Data Science work.
+          Plus most companies' data science departments are already mostly
+          R or Python. Although R is a little more 
+          popular for Data Science specifically, Python is easier to learn and
           much more flexible. Also, other classes at Brown use Python 
-          (like CS16 and CS141) so it's a little more relevant here.
+          (like CS16 and CS141) so it's more relevant here in PVD.
         </p>
 
         <br>
@@ -54,7 +60,7 @@
         <p>
           You've just been named IKEA's head Data Scientist! Hooray! After brushing off
           the blue and yellow confetti, you remember your dark secret: you've
-          never run Python code before. No problem- we're here to make usre you
+          never run Python code before. No problem- we're here to make sure you
           ace that first meeting with Ingvar Kamprad. If you're working from
           the Sunlab or MSLab (or any other department machine) you can skip
           over the installing Python section and right into creating your first
@@ -76,11 +82,11 @@
 
         <h3>Creating Your First Program</h3>
           <p>
-            Open the text editor Sublime, by typing sublime &amp; in your terminal
+          Open the text editor Sublime, by typing <code>sublime &amp;</code> in your terminal
             (if you are on your own computer 
             <a href="http://www.sublimetext.com/3">download sublime here</a>
             and run it however you like). If you prefer another text editor
-            go ahead, but we'll assume you're using Sublime.
+            go ahead.
             First we will make the .py file you will write your program in.
           </p>
            
@@ -93,7 +99,7 @@
           </p>
 
           <p>
-            3. Save this file, File &gt; Save, naming it <code>helloAlmhult.py</code>. The .py is very important!!
+            3. Save this file, File &gt; Save, naming it <code>helloAlmhult.py</code>.
           </p>
 
         <h3>Running Your First Program</h3>
@@ -113,20 +119,50 @@
 
       <hr>
         
-      <h2>Functions and Data Types</h2>
+      <h2>Data Types</h2>
         <p>
-          In Python there are functions, such as print(), that are built-in as well as others that are user-defined. You will be creating lots of functions throughout the course. Every function block in Python begins with the keyword <b>def</b> and ends with parentheses. These parentheses can take parameters or arguments as necessary. The <b>return</b> statement exits a function. Functions can be executed by having another function call on them, or directly from the Python prompt. For example: 
+          In Python, you can store information in a variable like this:
+          <pre>
+year_ikea_was_founded = 1943
+favorite_ikea_product = "forbluffad" </pre>
+          
+          Then, you can reference them like this:
+          <pre>
+print year_ikea_was_founded
+print favorite_ikea_product </pre>
+
+          Try putting those four lines in your program and run them.
+
+        <p>
+          There are a few different basic types of data you can store in a variable.
+          First are booleans, which are either <code>True</code> or <code>False</code>.
+          Note that they both start with a capital letter. For example:
+          <pre>
+is_ikea_good = True
+is_ikea_bad = False </pre>
+        </p> 
+
+        <p>
+          Numbers in Python are either integers or floats. An integer is a whole number, and floats are floating point numbers such as 3.65 and 52.3E-4. For example:
+          <pre>
+this_is_an_integer = 5
+print 7 / 3 # will return 2
+this_is_a_float = 4.99999
+print 7.0 / 3.0 # will return 2.33333333333 </pre>
+        </p> 
+
+        <p>
+          A string is a sequence of characters. Strings in Python are immutable, which means that you cannot change them. They can be indexed, with the first character at index 0. A string can be lots of characters or a single character. Python includes functions that can operate on string objects. You can see these string functions here: <a>https://docs.python.org/2/library/string.html#string-functions</a>
+        </p>
+
+      <h2>Functions</h2>
+
+        <p>
+          In Python there are functions, such as print(), that are built-in. You can also create your own! You will be creating lots of functions throughout the course. Every function block in Python begins with the keyword <b>def</b> and ends with parentheses. These parentheses can take arguments as necessary. The <b>return</b> statement exits a function. Functions can be executed by having another function call on them, or directly from the Python prompt. For example: 
           <pre>
 def print_this(str):
   print str
-  return
-          </pre>
-        </p>
-        <p>
-          Numbers in Python are either integers or floats. An integer is a whole number, and floats are floating point numbers such as 3.65 and 52.3E-4. 
-        </p> 
-        <p>
-          A string is a sequence of characters. Strings in Python are immutable, which means that you cannot change them. They can be indexed, with the first character at index 0. A string can be lots of characters or a single character. Python includes functions that can operate on string objects. You can see these string functions here: <a>https://docs.python.org/2/library/string.html#string-functions</a>
+  return </pre>
         </p>
         <h3>Problem 1</h3>
           <p>
