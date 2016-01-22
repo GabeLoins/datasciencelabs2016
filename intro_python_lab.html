@@ -115,11 +115,10 @@
         
       <h2>Functions and Data Types</h2>
         <p>
-          In Python there are functions, such as print(), that are built-in as well as others that are user-defined. You will be creating lots of functions throughout the course. Every function block in Python begins with the keyword <b>def</b> and ends with parentheses. These parentheses can take parameters or arguments as necessary. The <b>return</b> statement exits a function. Functions can be executed by having another function call on them, or directly from the Python prompt. For example: 
+          In Python there are functions, such as print(), that are built-in as well as others that are user-defined. You will be creating lots of functions throughout the course. Every function block in Python begins with the keyword <code>def</code> and ends with parentheses. These parentheses can take parameters or arguments as necessary. The <code>return</code> statement exits a function. Functions can be executed by having another function call on them, or directly from the Python prompt. For example: 
           <pre>
-def print_this(str):
-  print str
-  return
+def my_favorite_class():
+  return "data science"
           </pre>
         </p>
         <p>
@@ -127,6 +126,19 @@ def print_this(str):
         </p> 
         <p>
           A string is a sequence of characters. Strings in Python are immutable, which means that you cannot change them. They can be indexed, with the first character at index 0. A string can be lots of characters or a single character. Python includes functions that can operate on string objects. You can see these string functions here: <a>https://docs.python.org/2/library/string.html#string-functions</a>
+        </p>
+        <p>
+          Before you begin you get to coding, let's have a look at some important control flow statments. A very well-known one is the <code>if</code> statement. <code>if</code>, <code>elif</code> and <code>else</code> can work together to perform different operations based on a condition. For example,
+<pre>
+def greater_less_equal_5(number):
+  if number > 5:
+    return 1
+  elif number < 5:
+    return -1
+  else:
+    return 0
+</pre>
+<p>Note that sometimes a function might only need an <code>if</code> and <code>else</code>.
         </p>
         <h3>Problem 1</h3>
           <p>
@@ -178,7 +190,7 @@ for i in range(len(furniture)):
           <pre>
 tup = ('chair', 'mirror', 'stove', 'shelf')
 tup2 = (1, 2, 3, 4, 5)</pre>
-          Just like with lists, you can access values in a tuple by entering an index in square brackets.
+          Just like with lists, you can access values in a tuple by specifying an index in square brackets.
         </p>
         <h3>Problem 4</h3>
           <p>
