@@ -166,7 +166,7 @@ def greater_less_equal_5(number):
   else:
     return 0
 </pre>
-<p>Note that sometimes a function might only need an <code>if</code> and <code>else</code>. Often times, conditional statements will work with booleans and operators (==, !=, etc.).
+<p> This function returns 1 if the input is greater than 5, -1 if the input is less than 5 and 0 if the input is equal to five. Note that sometimes a function might only need an <code>if</code> and <code>else</code>. Often times, conditional statements will work with booleans and operators (==, !=, etc.).
 
       <h2>Functions</h2>
 
@@ -189,7 +189,7 @@ def my_favorite_class():
 
         <h3>Problem 3</h3>
           <p>
-            Write a function, replace, that takes in a string and replaces every space with a hyphen ('-').
+            Write a function, hyphenize, that takes in a string and replaces every space with a hyphen ('-').
           </p>
         <h3>Checkpoint 1</h3>
           <p>
@@ -204,8 +204,22 @@ def my_favorite_class():
 >>> my_list = [1, 2, 3, 4, 5]
 >>> my_list[3] = 7
 >>> my_list
-[1, 2, 3, 7, 5]
-          </pre>
+[1, 2, 3, 7, 5] 
+>>> len(my_list)
+5 </pre>
+          You can also create lists using the <code>range()</code> function. 
+          The range function takes in an end position, and returns a list of 
+          all the integers from 0 up until the end position, non inclusive. 
+          For example: 
+          <pre>
+>>> range(1)
+[0]
+>>> range(10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] </pre>
+          You can also give range() two parameters, a start and a stop. For example:
+          <pre>
+>>> range(3,6)
+[3, 4, 5] </pre>
           Lists are a flexible and extremely useful data type. Its functions include append(), sort(), reverse(), insert(), and more. Explore list functions here: <a>https://docs.python.org/2/tutorial/introduction.html#lists</a> </p>
           <p>
           You can iterate through lists using loops. An commonly-used option is the for loop, which can iterate over the items of lists and strings. For example:
